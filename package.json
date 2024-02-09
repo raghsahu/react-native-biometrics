@@ -1,6 +1,6 @@
 {
-  "name": "react-native-biometrics",
-  "version": "3.0.1",
+  "name": "react-native-fold-biometrics",
+  "version": "1.0.0",
   "summary": "A React Native library for biometrics",
   "description": "React Native biometric functionality for signing and encryption",
   "main": "build/cjs/index.js",
@@ -24,11 +24,11 @@
     "touch-id",
     "face-id"
   ],
-  "homepage": "https://github.com/SelfLender/react-native-biometrics",
+  "homepage": "https://github.com/raghsahu/react-native-biometrics",
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/SelfLender/react-native-biometrics.git"
+    "url": "git+https://github.com/raghsahu/react-native-biometrics.git"
   },
   "private": false,
   "author": {

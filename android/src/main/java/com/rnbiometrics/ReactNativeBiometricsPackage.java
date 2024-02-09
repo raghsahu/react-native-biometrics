@@ -1,6 +1,7 @@
 package com.rnbiometrics;
 
 import com.facebook.react.ReactPackage;
+import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
 import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
@@ -27,5 +28,11 @@ public class ReactNativeBiometricsPackage implements ReactPackage {
         modules.add(new ReactNativeBiometrics(reactContext));
 
         return modules;
+    }
+
+    // Deprecated RN 0.47
+    @Override
+    public List<Class<? extends JavaScriptModule>> createJSModules() {
+        return Collections.emptyList();
     }
 }

@@ -1,24 +1,24 @@
 
-# react-native-biometrics
+# react-native-fold-biometrics
 
 React native biometrics is a simple bridge to native iOS and Android keystore management.  It allows you to create public private key pairs that are stored in native keystores and protected by biometric authentication.  Those keys can then be retrieved later, after proper authentication, and used to create a cryptographic signature.
 
 ## React Native Compatibility
 
-| `react-native-biometrics` version | Required React Native Version |
+| `react-native-fold-biometrics` version | Required React Native Version |
 |:---------------------------------:|:-----------------------------:|
-| `>= 3.0.0`                        | `>= 0.60`                     |
+| `>= 1.0.0`                        | `>= 0.60`                     |
 | `<= 1.7.0`                        | `<= 0.59.x`                   |
 
 ## Getting started
 
 using either Yarn:
 
-`yarn add react-native-biometrics`
+`yarn add react-native-fold-biometrics`
 
 or npm:
 
-`$ npm install react-native-biometrics --save`
+`$ npm install react-native-fold-biometrics --save`
 
 ### Install pods
 
@@ -44,7 +44,7 @@ This package requires a compiled SDK version of 29 (Android 10.0) or higher
 
 This package is designed to make server authentication using biometrics easier.  Here is an image from https://android-developers.googleblog.com/2015/10/new-in-android-samples-authenticating.html illustrating the basic use case:
 
-![react-native-biometrics](/assets/biometricsdiagram.png)
+![react-native-fold-biometrics](/assets/biometricsdiagram.png)
 
 When a user enrolls in biometrics, a key pair is generated.  The private key is stored securely on the device and the public key is sent to a server for registration.  When the user wishes to authenticate, the user is prompted for biometrics, which unlocks the securely stored private key.  Then a cryptographic signature is generated and sent to the server for verification.  The server then verifies the signature.  If the verification was successful, the server returns an appropriate response and authorizes the user.
 
@@ -57,7 +57,7 @@ A constant for the touch id sensor type, evaluates to `'TouchID'`
 __Example__
 
 ```js
-import ReactNativeBiometrics, { BiometryTypes } from 'react-native-biometrics'
+import ReactNativeBiometrics, { BiometryTypes } from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -75,7 +75,7 @@ A constant for the face id sensor type, evaluates to `'FaceID'`
 __Example__
 
 ```js
-import ReactNativeBiometrics, { BiometryTypes } from 'react-native-biometrics'
+import ReactNativeBiometrics, { BiometryTypes } from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -93,7 +93,7 @@ A constant for generic Biometrics, evaluates to `'Biometrics'`
 __Example__
 
 ```js
-import ReactNativeBiometrics, { BiometryTypes } from 'react-native-biometrics'
+import ReactNativeBiometrics, { BiometryTypes } from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -116,7 +116,7 @@ __Options Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics({ allowDeviceCredentials: true })
 
@@ -140,7 +140,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics, { BiometryTypes } from 'react-native-biometrics'
+import ReactNativeBiometrics, { BiometryTypes } from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -173,7 +173,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -198,7 +198,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 rnBiometrics.biometricKeysExist()
@@ -226,7 +226,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
@@ -267,7 +267,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 let epochTimeSeconds = Math.round((new Date()).getTime() / 1000).toString()
 let payload = epochTimeSeconds + 'some message'
@@ -312,7 +312,7 @@ __Result Object__
 __Example__
 
 ```js
-import ReactNativeBiometrics from 'react-native-biometrics'
+import ReactNativeBiometrics from 'react-native-fold-biometrics'
 
 const rnBiometrics = new ReactNativeBiometrics()
 
