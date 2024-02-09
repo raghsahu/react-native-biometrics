@@ -7,8 +7,8 @@ React native biometrics is a simple bridge to native iOS and Android keystore ma
 
 | `react-native-fold-biometrics` version | Required React Native Version |
 |:---------------------------------:|:-----------------------------:|
-| `>= 1.0.2`                        | `>= 0.60`                     |
-| `>= 1.0.2`                        | `<= 0.59.x`                   |
+| `>= 1.0.3`                        | `>= 0.60`                     |
+| `>= 1.0.3`                        | `<= 0.59.x`                   |
 
 ## Getting started
 
